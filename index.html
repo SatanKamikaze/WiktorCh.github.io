@@ -1,134 +1,129 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta name="yandex-verification" content="56270e354d6584ce" /> 
+    <meta name="yandex-verification" content="56270e354d6584ce" />
     <meta name="google-site-verification" content="zxsD0oMeCOCOP32gWflfdKbZ5KDYvtE5dQGq2pPEp_s" />
     <link rel="icon" type="image/x-icon" href="Ikonka.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wiktor Chruściel - Wizytówka</title>
+    <title>Wiktor Chruściel – student informatyki | Wizytówka i portfolio</title>
+    <meta name="description" content="Wiktor Chruściel – student informatyki (Uniwersytet Śląski). Wizytówka, edukacja, hobby oraz portfolio projektów.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://satankamikaze.github.io/WiktorCh.github.io/">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Wiktor Chruściel",
+      "jobTitle": "Student Informatyki",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "Uniwersytet Śląski"
+      },
+      "knowsAbout": ["Informatyka", "Programowanie", "Nowoczesne technologie", "Bazy danych"],
+      "url": "https://satankamikaze.github.io/WiktorCh.github.io/"
+    }
+    </script>
     <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: white;
-            background: url('19b5ac69-28ba-45b6-a236-1878e5564b9f.jpg') no-repeat center center fixed;
-            background-size: cover;
-        }
-
-        header {
-            background-color: rgba(0, 0, 0, 0.6);
-            text-align: center;
-            padding: 2rem 1rem;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin: 0;
-        }
-
-        nav {
-            background-color: rgba(255, 255, 255, 0.1);
-            text-align: center;
-            padding: 1rem;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: #ff66cc;
-        }
-
-        section {
-            padding: 2rem;
-            background-color: rgba(0, 0, 0, 0.5);
-            margin: 1rem auto;
-            width: 90%;
-            max-width: 900px;
-            border-radius: 15px;
-        }
-
-        h2 {
-            border-bottom: 2px solid white;
-            padding-bottom: 0.5rem;
-        }
-
-        .portfolio img {
-            width: 100%;
-            max-width: 400px;
-            border-radius: 10px;
-            display: block;
-            margin: 1rem auto;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: rgba(0, 0, 0, 0.7);
-            font-size: 0.9rem;
-        }
+        body{margin:0;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;color:#fff;background:url('19b5ac69-28ba-45b6-a236-1878e5564b9f.jpg') no-repeat center center fixed;background-size:cover}
+        header{background-color:rgba(0,0,0,.6);text-align:center;padding:2rem 1rem}
+        header h1{font-size:2.5rem;margin:0}
+        header p{margin:.6rem 0 0;opacity:.95}
+        nav{background-color:rgba(255,255,255,.1);text-align:center;padding:1rem;position:sticky;top:0;backdrop-filter:blur(6px);z-index:10}
+        nav a{color:#fff;text-decoration:none;margin:0 1rem;font-weight:700;transition:.3s}
+        nav a:hover{color:#ff66cc}
+        section{padding:2rem;background-color:rgba(0,0,0,.5);margin:1rem auto;width:90%;max-width:900px;border-radius:15px}
+        h2{border-bottom:2px solid #fff;padding-bottom:.5rem}
+        footer{text-align:center;padding:1rem;background-color:rgba(0,0,0,.7);font-size:.9rem}
+        .fun-badge{display:inline-block;padding:.35rem .7rem;border-radius:999px;background:rgba(255,102,204,.25);border:1px solid rgba(255,102,204,.65);font-weight:800;letter-spacing:.2px;margin-bottom:.75rem}
+        .game-wrap{display:grid;gap:1rem;margin-top:1rem}
+        .game-panel{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:1rem}
+        .game-stats{display:flex;flex-wrap:wrap;gap:.75rem 1.25rem;align-items:center;margin-bottom:.75rem}
+        .pill{background:rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:.35rem .75rem}
+        .btn{cursor:pointer;border:none;border-radius:12px;padding:.85rem 1rem;font-weight:900;color:#fff;background:rgba(255,102,204,.35);border:1px solid rgba(255,102,204,.75);transition:transform .08s ease,background .2s ease;user-select:none}
+        .btn:hover{background:rgba(255,102,204,.45)}
+        .btn:active{transform:scale(.98)}
+        .btn-secondary{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22)}
+        .btn-secondary:hover{background:rgba(255,255,255,.14)}
+        a:focus,button:focus{outline:3px solid rgba(255,102,204,.9);outline-offset:2px}
     </style>
 </head>
 <body>
-
     <header>
         <h1>Wiktor Chruściel</h1>
         <p>Student Informatyki | Pasjonat Technologii i Sportu</p>
     </header>
-
-    <nav>
+    <nav aria-label="Nawigacja główna">
         <a href="#o-mnie">O mnie</a>
         <a href="#edukacja">Edukacja</a>
         <a href="#hobby">Hobby</a>
         <a href="#portfolio">Portfolio</a>
+        <a href="#gra">Gra</a>
     </nav>
-
-    <section id="o-mnie">
-        <h2>O mnie</h2>
-        <p><strong>Data urodzin:</strong> 26 listopada 2003</p>
-        <p>Jestem studentem Uniwersytetu Śląskiego na kierunku Informatyka. Interesuję się nowoczesnymi technologiami, programowaniem i rozwojem osobistym. Lubię wyzwania i projekty, które łączą kreatywność z techniczną precyzją.</p>
-    </section>
-
-    <section id="edukacja">
-        <h2>Ukończone szkoły</h2>
-        <ul>
-            <li>Liceum Ogólnokształcące im. Majora Sucharskiego w Myszkowie</li>
-            <li>Uniwersytet Śląski – kierunek: Informatyka (obecnie student)</li>
-        </ul>
-    </section>
-
-    <section id="hobby">
-        <h2>Hobby</h2>
-        <ul>
-            <li>Komputery</li>
-            <li>Sporty siłowe</li>
-            <li>Muzyka</li>
-            <li>Gry</li>
-        </ul>
-    </section>
-
-    <section id="portfolio" class="portfolio">
-        <h2>Portfolio</h2>
-        <p>Moje projekty lub programy:</p>
-        <ul>
-        <li><a href="https://mega.nz/file/ByQByQQZ#tTbVSiyWs1pT0s6tcturPXDqBLZGTr3S4Bme08E8BjY" target="_blank">KLIENT SIŁOWNI Z OBSŁUGĄ BAZ DANYCH</a></li>
-        </ul>
-
-    </section>
-
-    <footer>
-        © 2025 Wiktor Chruściel. Wszelkie prawa zastrzeżone.
-    </footer>
-
+    <main>
+        <section id="o-mnie">
+            <h2>O mnie</h2>
+            <p><strong>Data urodzin:</strong> 26 listopada 2003</p>
+            <p>Jestem studentem Uniwersytetu Śląskiego na kierunku Informatyka. Interesuję się nowoczesnymi technologiami, programowaniem i rozwojem osobistym. Lubię wyzwania i projekty, które łączą kreatywność z techniczną precyzją.</p>
+        </section>
+        <section id="edukacja">
+            <h2>Ukończone szkoły</h2>
+            <ul>
+                <li>Liceum Ogólnokształcące im. Majora Sucharskiego w Myszkowie</li>
+                <li>Uniwersytet Śląski – kierunek: Informatyka (obecnie student)</li>
+            </ul>
+        </section>
+        <section id="hobby">
+            <h2>Hobby</h2>
+            <ul>
+                <li>Komputery</li>
+                <li>Sporty siłowe</li>
+                <li>Muzyka</li>
+                <li>Gry</li>
+            </ul>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <p>Moje projekty lub programy:</p>
+            <ul>
+                <li><a href="https://mega.nz/file/ByQByQQZ#tTbVSiyWs1pT0s6tcturPXDqBLZGTr3S4Bme08E8BjY" target="_blank" rel="noopener noreferrer">KLIENT SIŁOWNI Z OBSŁUGĄ BAZ DANYCH</a></li>
+            </ul>
+        </section>
+        <section id="gra">
+            <div class="fun-badge">Takie tam dla zabawy</div>
+            <h2>Mini gra: Klikacz refleksu (10 sekund)</h2>
+            <div class="game-wrap">
+                <div class="game-panel">
+                    <div class="game-stats" aria-live="polite">
+                        <span class="pill">Czas: <strong id="timeLeft">10</strong>s</span>
+                        <span class="pill">Wynik: <strong id="score">0</strong></span>
+                        <span class="pill">Rekord (local): <strong id="best">0</strong></span>
+                        <span class="pill">Status: <strong id="status">Gotowy</strong></span>
+                    </div>
+                    <button class="btn" id="tapBtn" type="button" disabled>Klikaj mnie!</button>
+                    <div style="display:flex;gap:.75rem;flex-wrap:wrap;margin-top:.75rem">
+                        <button class="btn" id="startBtn" type="button">Start</button>
+                        <button class="btn btn-secondary" id="resetBtn" type="button">Reset</button>
+                    </div>
+                    <p style="opacity:.9;line-height:1.4;margin-top:.75rem">Zasady: klikaj przycisk jak najwięcej razy w 10 sekund. Rekord zapisuje się w przeglądarce (localStorage).</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>© 2025 Wiktor Chruściel. Wszelkie prawa zastrzeżone.</footer>
+    <script>
+        const timeEl=document.getElementById("timeLeft"),scoreEl=document.getElementById("score"),bestEl=document.getElementById("best"),statusEl=document.getElementById("status"),tapBtn=document.getElementById("tapBtn"),startBtn=document.getElementById("startBtn"),resetBtn=document.getElementById("resetBtn");
+        const GAME_SECONDS=10;let timeLeft=GAME_SECONDS,score=0,timer=null,running=false;
+        const BEST_KEY="wiktor_clicker_best_v1",loadBest=()=>Number(localStorage.getItem(BEST_KEY)||0),saveBest=v=>localStorage.setItem(BEST_KEY,String(v));
+        function render(){timeEl.textContent=String(timeLeft);scoreEl.textContent=String(score);bestEl.textContent=String(loadBest())}
+        function setStatus(t){statusEl.textContent=t}
+        function resetGame(){clearInterval(timer);timer=null;running=false;timeLeft=GAME_SECONDS;score=0;tapBtn.disabled=true;setStatus("Gotowy");render()}
+        function finishGame(){clearInterval(timer);timer=null;running=false;tapBtn.disabled=true;const best=loadBest();score>best?(saveBest(score),setStatus("Koniec — nowy rekord!")):setStatus("Koniec");render()}
+        function startGame(){if(running)return;resetGame();running=true;tapBtn.disabled=false;tapBtn.focus();setStatus("Gramy!");timer=setInterval(()=>{timeLeft-=1;render();timeLeft<=0&&finishGame()},1000)}
+        tapBtn.addEventListener("click",()=>{if(!running)return;score+=1;render()});
+        startBtn.addEventListener("click",startGame);
+        resetBtn.addEventListener("click",resetGame);
+        render();
+    </script>
 </body>
 </html>
-
-
-
-
